@@ -1,0 +1,57 @@
+.collection-item {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      .image{
+        opacity: 0.8;
+      }
+
+      .button-container {
+        opacity: 0.85;
+        display: flex;
+      }
+    }
+
+  
+    .image {
+      width: 100%;
+      height: 95%;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 5px;
+    }
+
+    .button-container{
+      display: none;
+      opacity: 0.7;
+      top: 255px;
+      position: absolute;
+      width: 80%;
+
+      .custom-button {
+        width: 100%;
+      }
+    }
+  
+    .collection-footer {
+      width: 100%;
+      height: 5%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+  
+      .name {
+        width: 90%;
+        margin-bottom: 15px;
+      }
+  
+      .price {
+        width: 10%;
+      }
+    }
+  }
